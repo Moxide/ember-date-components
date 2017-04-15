@@ -508,24 +508,6 @@ export default Component.extend({
       this._close();
     },
 
-    closeNext() {
-      // Wait for all other events to finish
-      // Somehow, 1 or 10 doesn't work
-      run.later(this, () => {
-        if (get(this, 'isDestroyed')) {
-          return;
-        }
-        let inputValue = get(this, 'inputValue');
-        // If there is an input, this means it hasn't been processed yet
-        // --> Process it now!
-        if (inputValue) {
-          this._checkStringInput();
-        }
-
-        this._close();
-      }, 100);
-    },
-
     selectUp() {
       this.decrementProperty('selected');
       if (get(this, 'selected') < -1) {
