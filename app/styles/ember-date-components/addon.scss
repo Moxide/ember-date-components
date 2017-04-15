@@ -37,6 +37,7 @@ $date-picker-color-background: #eee !default;
 }
 
 .date-picker__header__title {
+  display: inline-block;
   font-weight: bold;
   font-size: 1em;
   line-height: 30px;
