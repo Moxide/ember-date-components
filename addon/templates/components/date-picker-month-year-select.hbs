@@ -2,6 +2,7 @@
 
   {{#basic-dropdown
     horizontalPosition='right'
+    renderInPlace=renderInPlace
   as |monthDropdown|}}
     {{#monthDropdown.trigger
       class='date-picker__header__month date-picker__header__select'
@@ -32,6 +33,7 @@
 {{#unless yearPickerDisabled}}
 
   {{#basic-dropdown
+    renderInPlace=renderInPlace
   as |yearDropdown|}}
     {{#yearDropdown.trigger
       class='date-picker__header__year date-picker__header__select'

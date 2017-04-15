@@ -1,6 +1,7 @@
 {{#basic-dropdown
   onOpen=(action 'openDropdown')
   onClose=(action 'closeDropdown')
+  renderInPlace=renderInPlace
 as |dd| }}
 
   {{#dd.trigger class='date-picker__trigger'}}
@@ -51,6 +52,7 @@ as |dd| }}
             {{date-picker-month-year-select
               minDate=minDate
               maxDate=maxDate
+              renderInPlace=renderInPlace
               currentMonth=currentMonth
               disableMonthPicker=disableMonthPicker
               disableYearPicker=disableYearPicker
