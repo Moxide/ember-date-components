@@ -218,7 +218,7 @@
 .time-picker__wrapper {
   display: inline-block;
   position: relative;
-  width: 7em;
+  width: 6em;
 }
 
 .time-picker__input {
@@ -226,7 +226,7 @@
 }
 
 .time-picker__dropdown {
-  width: 100%;
+  width: 4em;
   max-height: 300px;
   background: #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
